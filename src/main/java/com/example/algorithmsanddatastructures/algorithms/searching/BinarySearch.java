@@ -12,7 +12,7 @@
  *
  * */
 
-package com.example.aldat.algorithms.searching;
+package com.example.algorithmsanddatastructures.algorithms.searching;
 
 public class BinarySearch {
 

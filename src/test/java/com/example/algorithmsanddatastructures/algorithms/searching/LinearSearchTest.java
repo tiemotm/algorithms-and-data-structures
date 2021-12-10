@@ -1,4 +1,4 @@
-package com.example.aldat.algorithms.searching;
+package com.example.algorithmsanddatastructures.algorithms.searching;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -3,7 +3,7 @@ package com.example.aldat.algorithms.searching;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.example.aldat.algorithms.searching.BinarySearch.binarySearch;
+import static com.example.algorithmsanddatastructures.algorithms.searching.BinarySearch.binarySearch;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BinarySearchTest {
