@@ -12,7 +12,7 @@
  *
  * */
 
-package com.example.algorithms.searching;
+package com.example.aldat.algorithms.searching;
 
 public class LinearSearch {
 

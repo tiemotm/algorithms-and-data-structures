@@ -13,7 +13,7 @@
  *
  * */
 
-package com.example.algorithms.sorting;
+package com.example.aldat.algorithms.sorting;
 
 public class SelectionSort {
 
