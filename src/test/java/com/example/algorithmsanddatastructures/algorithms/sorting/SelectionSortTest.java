@@ -1,9 +1,9 @@
-package com.example.aldat.algorithms.sorting;
+package com.example.algorithmsanddatastructures.algorithms.sorting;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.example.aldat.algorithms.sorting.SelectionSort.selectionSort;
+import static com.example.algorithmsanddatastructures.algorithms.sorting.SelectionSort.selectionSort;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SelectionSortTest {

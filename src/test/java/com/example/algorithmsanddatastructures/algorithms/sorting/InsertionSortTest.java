@@ -1,4 +1,4 @@
-package com.example.aldat.algorithms.sorting;
+package com.example.algorithmsanddatastructures.algorithms.sorting;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

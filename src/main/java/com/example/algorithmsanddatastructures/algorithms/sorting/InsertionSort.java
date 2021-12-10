@@ -13,7 +13,7 @@
  *
  * */
 
-package com.example.aldat.algorithms.sorting;
+package com.example.algorithmsanddatastructures.algorithms.sorting;
 
 public class InsertionSort {
 

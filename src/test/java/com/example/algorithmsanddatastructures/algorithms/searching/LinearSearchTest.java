@@ -3,7 +3,7 @@ package com.example.algorithmsanddatastructures.algorithms.searching;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.example.aldat.algorithms.searching.LinearSearch.linearSearch;
+import static com.example.algorithmsanddatastructures.algorithms.searching.LinearSearch.linearSearch;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LinearSearchTest {
