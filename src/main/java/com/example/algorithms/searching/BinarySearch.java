@@ -12,7 +12,7 @@
  *
  * */
 
-package com.example.algorithmsanddatastructures.searching;
+package com.example.algorithms.searching;
 
 public class BinarySearch {
 

@@ -13,7 +13,7 @@
  *
  * */
 
-package com.example.algorithmsanddatastructures.sorting;
+package com.example.algorithms.sorting;
 
 public class InsertionSort {
 

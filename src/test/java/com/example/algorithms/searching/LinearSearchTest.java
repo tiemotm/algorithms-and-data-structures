@@ -1,9 +1,9 @@
-package com.example.algorithmsanddatastructures.searching;
+package com.example.algorithms.searching;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.example.algorithmsanddatastructures.searching.LinearSearch.linearSearch;
+import static com.example.algorithms.searching.LinearSearch.linearSearch;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LinearSearchTest {
