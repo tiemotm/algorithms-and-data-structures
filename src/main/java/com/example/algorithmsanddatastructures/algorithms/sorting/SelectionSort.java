@@ -19,7 +19,7 @@ public class SelectionSort {
 
     /**
      * Sorting arr in ascending order
-     * @param arr This is the arr that should be sorted
+     * @param arr This is the array that should be sorted
      * @param <T> This describes the type parameter
      */
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
