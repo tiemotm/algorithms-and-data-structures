@@ -21,7 +21,7 @@ public class SelectionSortTest {
     @Test
     @DisplayName("Sort string array {\"h\", \"a\", \"j\", \"l\", \"o\"} into ascending order {\"a\", \"h\", \"j\", \"l\", \"o\"}")
     public void testStringArraySortedAscending() {
-        selectionSort(intArr);
-        assertThat(intArr).isSorted();
+        selectionSort(strArr);
+        assertThat(strArr).isSorted();
     }
 }

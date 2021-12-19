@@ -20,7 +20,7 @@ public class InsertionSortTest {
     @Test
     @DisplayName("Sort string array {\"h\", \"a\", \"j\", \"l\", \"o\"} into ascending order {\"a\", \"h\", \"j\", \"l\", \"o\"}")
     public void testStringArraySortedAscending() {
-        InsertionSort.insertionSort(intArr);
-        assertThat(intArr).isSorted();
+        InsertionSort.insertionSort(strArr);
+        assertThat(strArr).isSorted();
     }
 }
