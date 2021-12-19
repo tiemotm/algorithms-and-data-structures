@@ -1,9 +1,8 @@
 /**
- * <h1>Implementation of insertion sort</h1>
+ * <h1>Implementation of merge sort</h1>
  * <p>
- * A sequential sort algorithm for sorting an array in ascending order
- * by inserting the first element of the unsorted area
- * into the right place of the sorted area.
+ * A divide and conquer sort algorithm for sorting an array in ascending order
+ * by sorting subarrays recursively and merging them together
  * Works with all data-types that implement the Comparable interface.
  * Time complexity: O(n^2)
  *
@@ -15,11 +14,17 @@
 
 package com.example.algorithmsanddatastructures.algorithms.sorting;
 
-import java.sql.Array;
 import java.util.Arrays;
 
 public class MergeSort {
 
+    /**
+     * Sorting arr from left to right into ascending order
+     * @param arr This is the array that should be sorted
+     * @param left This is the left bound
+     * @param right This is the right bound
+     * @param <T> This describes the type parameter
+     */
     public static <T extends Comparable<T>> void mergeSort(T[] arr, int left, int right) {
         if(left < right) {
             int mid = (left + right) / 2;
@@ -29,10 +34,20 @@ public class MergeSort {
         }
     }
 
+    /**
+     * Sorting arr into ascending order
+     * @param arr This is the array that should be sorted
+     * @param <T> This describes the type parameter
+     */
     public static <T extends Comparable<T>> void mergeSort(T[] arr) {
         mergeSort(arr, 0, arr.length - 1);
     }
 
+    /**
+     * Merging left to mid and mid to right and copying into arr
+     * @param arr This is the array that should be sorted
+     * @param <T> This describes the type parameter
+     */
     private static <T extends Comparable<T>> void merge(T[] arr, int left, int mid, int right) {
         T[] hArr = Arrays.copyOf(arr, arr.length);
 
