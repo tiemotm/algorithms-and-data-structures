@@ -28,6 +28,8 @@ public class MergeSort {
     public static <T extends Comparable<T>> void mergeSort(T[] arr, int left, int right) {
         if(left < right) {
             int mid = (left + right) / 2;
+            // Recursively sort left half and right half
+            // -> divide and conquer principle
             mergeSort(arr, left, mid);
             mergeSort(arr, mid + 1, right);
             merge(arr, left, mid, right);
@@ -49,17 +51,21 @@ public class MergeSort {
      * @param <T> This describes the type parameter
      */
     private static <T extends Comparable<T>> void merge(T[] arr, int left, int mid, int right) {
-        T[] hArr = Arrays.copyOf(arr, arr.length);
+        T[] hArr = (T[]) new Comparable[arr.length];
 
-        for (int i = 0; i <= right; i++) {
+        // Copy relevant part to helper array
+        for (int i = left; i <= right; i++) {
             hArr[i] = arr[i];
         }
 
+        // Writing position
         int outPos = left;
         int leftPos = left;
         int rightPos = mid + 1;
 
+        // Merge until one of both sub-arrays is empty
         while (leftPos <= mid && rightPos <= right) {
+            // write smaller element of both sub-arrays to current position
             if(hArr[leftPos].compareTo(hArr[rightPos]) < 0) {
                 arr[outPos++] = hArr[leftPos++];
             } else {
@@ -67,6 +73,8 @@ public class MergeSort {
             }
         }
 
+        // If left sub-array is empty there is nothing more to do, the right sub-array elements are already in position
+        // If right sub-array is empty copy remaining elements of left sub-array
         while (leftPos <= mid) {
             arr[outPos++] = hArr[leftPos++];
         }
