@@ -26,13 +26,14 @@ public class SelectionSort {
      */
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
         for (int i = 0; i < arr.length - 1 ; i++) {
+            // Find the smallest element in arr[i, ..., n-1]
             int minPos = i;
 
-            // Find the smallest element in arr[i, ..., n-1]
             for (int j = i + 1; j < arr.length; j++) {
                 if(arr[j].compareTo(arr[minPos]) < 0) minPos = j;
             }
 
+            // Brings next smallest element into right position
             ArrayOperations.swap(arr, i, minPos);
         }
     }
